@@ -7,18 +7,15 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
 import androidx.core.content.ContextCompat
-import com.aprp.whitespace.Walktrough.WalktroughAdapter
-import com.aprp.whitespace.Walktrough.isColorLight
-import com.aprp.whitespace.Walktrough.onPageSelected
 import com.squidward.makanenak.MainActivity
 import com.squidward.makanenak.R
 import kotlinx.android.synthetic.main.activity_walkthrough.*
-import kotlinx.android.synthetic.main.activity_walkthrough.view.*
 
 class WalkthroughActivity : AppCompatActivity() {
 
-    lateinit var preference : SharedPreferences
-    val preferenceShowIntro = "Intro"
+
+    private lateinit var preference : SharedPreferences
+    private val preferenceShowIntro = "Intro"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -59,8 +56,7 @@ class WalkthroughActivity : AppCompatActivity() {
                 val editor = preference.edit()
                 editor.putBoolean(preferenceShowIntro, false)
                 editor.apply()
-                }
-            }
+                } }
             }
     }
 }

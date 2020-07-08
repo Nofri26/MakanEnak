@@ -1,4 +1,4 @@
-package com.aprp.whitespace.Walktrough
+package com.squidward.makanenak.Walkthrough
 
 import android.view.View
 import android.view.ViewGroup
