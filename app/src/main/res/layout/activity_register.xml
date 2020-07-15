@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register.RegisterActivity">
+
+    <TextView
+        android:id="@+id/t_register"
+        style="@style/PageText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/dimen64"
+        android:text="@string/register"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/form_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen32"
+        android:layout_marginTop="@dimen/dimen64"
+        android:background="@drawable/bubble_style"
+        android:elevation="@dimen/dimen18"
+        android:padding="@dimen/dimen10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/t_register">
+
+        <EditText
+            android:id="@+id/nama_lengkap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFF"
+            android:hint="@string/nama_lengkap" />
+
+        <View
+            android:id="@+id/v_saparator1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/nama_lengkap"
+            android:background="#E8E9E8" />
+
+        <EditText
+            android:id="@+id/email_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/v_saparator1"
+            android:backgroundTint="#FFF"
+            android:hint="@string/e_mail" />
+
+        <View
+            android:id="@+id/v_saparator2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/email_register"
+            android:background="#E8E9E8" />
+
+        <EditText
+            android:id="@+id/password_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/v_saparator2"
+            android:backgroundTint="#FFF"
+            android:hint="@string/password" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_selanjutnya"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen64"
+        android:layout_marginHorizontal="@dimen/dimen32"
+        android:layout_marginTop="@dimen/dimen64"
+        android:background="@drawable/bg_rounded"
+        android:text="@string/selanjutnya"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/form_register" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

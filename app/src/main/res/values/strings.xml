@@ -1,4 +1,12 @@
 <resources>
     <string name="app_name">MakanEnak</string>
     <string name="makan_enak">Makan Enak</string>
+    <string name="e_mail">E-Mail</string>
+    <string name="pass">*******</string>
+    <string name="login">Login</string>
+    <string name="atau">Atau</string>
+    <string name="register">Register</string>
+    <string name="password">Password</string>
+    <string name="selanjutnya">Selanjutnya</string>
+    <string name="nama_lengkap">Nama Lengkap</string>
 </resources>
