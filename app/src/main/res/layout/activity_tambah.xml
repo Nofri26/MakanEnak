@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Tambah.TambahActivity">
+
+    <TextView
+        android:id="@+id/t_login"
+        style="@style/PageText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen32"
+        android:layout_marginVertical="@dimen/dimen64"
+        android:text="@string/tambahkan_makanan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="@dimen/dimen32"
+        android:textColor="@color/white"
+        android:background="@drawable/bg_rounded"
+        android:text="@string/masukan_gambar_makanan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/t_login">
+    </Button>
+
+    <RelativeLayout
+        android:id="@+id/form_tambah"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen32"
+        android:layout_marginTop="@dimen/dimen32"
+        android:background="@drawable/bubble_style"
+        android:elevation="@dimen/dimen10"
+        android:padding="@dimen/dimen10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_image">
+
+        <EditText
+            android:id="@+id/et_nama_makanan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFF"
+            android:hint="@string/nama_makanan" />
+
+        <View
+            android:id="@+id/v_saparator1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/et_nama_makanan"
+            android:background="#E8E9E8" />
+
+        <EditText
+            android:id="@+id/et_harga"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/v_saparator1"
+            android:backgroundTint="#FFF"
+            android:hint="Rp." />
+
+        <View
+            android:id="@+id/v_saparator2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/et_harga"
+            android:background="#E8E9E8" />
+
+        <EditText
+            android:id="@+id/et_review"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/v_saparator2"
+            android:backgroundTint="#FFF"
+            android:hint="@string/review_makanan" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_tambah"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen64"
+        android:layout_marginHorizontal="@dimen/dimen32"
+        android:layout_marginTop="@dimen/dimen64"
+        android:background="@drawable/bg_rounded"
+        android:text="@string/tambah"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/form_tambah" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
