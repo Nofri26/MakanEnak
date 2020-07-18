@@ -12,6 +12,7 @@ import android.widget.Toast
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.storage.FirebaseStorage
 import com.squidward.makanenak.R
+import com.squidward.makanenak.Utama.UtamaActivity
 import kotlinx.android.synthetic.main.activity_tambah.*
 import java.util.*
 
@@ -56,7 +57,7 @@ class TambahActivity : AppCompatActivity() {
     private fun uploadImage(){
         if(selectedPhotoUri == null) return
         val filename = UUID.randomUUID().toString()
-        val ref = FirebaseStorage.getInstance().getReference("/game_image/$filename")
+        val ref = FirebaseStorage.getInstance().getReference("/gambar_makanan/$filename")
 
         ref.putFile(selectedPhotoUri!!)
             .addOnSuccessListener {
@@ -78,6 +79,7 @@ class TambahActivity : AppCompatActivity() {
         val dataMakanan = DataMakanan(nama_makanan, harga_makanan, review_makanan, gambar_makanan)
         ref.setValue(dataMakanan)
             .addOnSuccessListener {
+                startActivity(Intent(this, UtamaActivity::class.java))
                 Toast.makeText(this,"Makanan successfuly added to library!", Toast.LENGTH_LONG).show()
                 finish();
                 overridePendingTransition(0, 0);

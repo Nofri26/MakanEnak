@@ -16,8 +16,8 @@
         <activity android:name=".Login.LoginActivity" />
         <activity android:name=".Register.RegisterActivity" />
         <activity android:name=".Walkthrough.WalkthroughActivity" />
-        <activity android:name=".MainActivity" />
-        <activity android:name=".Splashscreen">
+        <activity android:name=".Splashscreen" />
+        <activity android:name=".Utama.UtamaActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

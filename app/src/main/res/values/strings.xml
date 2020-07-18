@@ -10,9 +10,11 @@
     <string name="selanjutnya">Selanjutnya</string>
     <string name="nama_lengkap">Nama Lengkap</string>
     <string name="tambahkan_makanan">Tambahkan Makanan Favorit anda</string>
-    <string name="nama_makanan">Nama Makanan</string>
-    <string name="review_makanan">Review Makanan</string>
     <string name="tambah">Tambah</string>
     <string name="masukan_gambar_makanan">Masukan Gambar Makanan</string>
     <string name="tambah_makanan_baru">Tambahkan Makanan Favorit Baru</string>
+    <string name="img">Img</string>
+    <string name="nama_makanan">Nama Makanan</string>
+    <string name="harga_makanan">Harga Makanan</string>
+    <string name="review_makanan">Review Makanan</string>
 </resources>

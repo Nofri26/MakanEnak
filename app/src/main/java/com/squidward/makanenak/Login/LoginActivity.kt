@@ -8,7 +8,7 @@ import android.widget.Toast
 import com.google.firebase.auth.*
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
-import com.squidward.makanenak.MainActivity
+import com.squidward.makanenak.Utama.UtamaActivity
 import com.squidward.makanenak.R
 import com.squidward.makanenak.Register.RegisterActivity
 import kotlinx.android.synthetic.main.activity_login.*
@@ -39,11 +39,11 @@ class LoginActivity : AppCompatActivity() {
                         return@addOnCompleteListener
                     } else
                         Toast.makeText(this,"Selamat Datang !", Toast.LENGTH_SHORT).show()
-                    startActivity(Intent(this, MainActivity::class.java))
+                    startActivity(Intent(this, UtamaActivity::class.java))
                 }
                 .addOnFailureListener {
                     Log.d("Main","Failed Login: ${it.message}")
-                    Toast.makeText(this,"Admin Area !", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this,"Email atau Password Salah !", Toast.LENGTH_SHORT).show()
                 }
         }
 

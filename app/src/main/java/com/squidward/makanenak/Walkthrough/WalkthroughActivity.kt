@@ -8,7 +8,7 @@ import android.os.Bundle
 import android.widget.ImageView
 import androidx.core.content.ContextCompat
 import com.squidward.makanenak.Login.LoginActivity
-import com.squidward.makanenak.MainActivity
+import com.squidward.makanenak.Utama.UtamaActivity
 import com.squidward.makanenak.R
 import kotlinx.android.synthetic.main.activity_walkthrough.*
 
@@ -51,7 +51,7 @@ class WalkthroughActivity : AppCompatActivity() {
             if (pager.currentItem + 1 < pager.childCount){
                 pager.currentItem += 1
             } else {
-                Intent(applicationContext, MainActivity::class.java).also {
+                Intent(applicationContext, UtamaActivity::class.java).also {
                 startActivity(it)
                 finish()
                 val editor = preference.edit()
