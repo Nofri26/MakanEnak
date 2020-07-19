@@ -80,7 +80,7 @@ class TambahActivity : AppCompatActivity() {
         ref.setValue(dataMakanan)
             .addOnSuccessListener {
                 startActivity(Intent(this, UtamaActivity::class.java))
-                Toast.makeText(this,"Makanan successfuly added to library!", Toast.LENGTH_LONG).show()
+                Toast.makeText(this,"Makanan Berhasil Ditambahkan!", Toast.LENGTH_LONG).show()
                 finish();
                 overridePendingTransition(0, 0);
                 startActivity(getIntent());

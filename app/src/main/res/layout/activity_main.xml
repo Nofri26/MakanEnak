@@ -9,7 +9,7 @@
     <View
         android:id="@+id/view"
         android:layout_width="wrap_content"
-        android:layout_height="@dimen/dimen180"
+        android:layout_height="@dimen/dimen142"
         android:background="@color/colorPrimary"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -18,19 +18,20 @@
     <TextView
         android:id="@+id/textView"
         style="@style/MainText"
-        android:layout_marginTop="@dimen/dimen24"
+        android:layout_marginTop="@dimen/dimen32"
         android:text="@string/makan_enak"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/view" />
 
-    <ImageView
+    <Button
         android:layout_width="24dp"
         android:layout_height="24dp"
-        android:layout_marginLeft="@dimen/dimen24"
-        android:layout_marginTop="@dimen/dimen24"
-        android:src="@drawable/ic_menu"
-        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/btn_popup"
+        android:layout_marginTop="@dimen/dimen20"
+        android:layout_marginEnd="@dimen/dimen20"
+        android:background="@drawable/ic_menu"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
@@ -60,8 +61,8 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
         <ListView
             android:id="@+id/list_view"
             android:layout_width="match_parent"

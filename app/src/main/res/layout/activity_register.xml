@@ -31,24 +31,9 @@
         app:layout_constraintTop_toBottomOf="@+id/t_register">
 
         <EditText
-            android:id="@+id/nama_lengkap"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:backgroundTint="#FFF"
-            android:hint="@string/nama_lengkap" />
-
-        <View
-            android:id="@+id/v_saparator1"
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_below="@id/nama_lengkap"
-            android:background="#E8E9E8" />
-
-        <EditText
             android:id="@+id/email_register"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/v_saparator1"
             android:backgroundTint="#FFF"
             android:hint="@string/e_mail" />
 
@@ -64,6 +49,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/v_saparator2"
+            android:inputType="textPassword"
             android:backgroundTint="#FFF"
             android:hint="@string/password" />
     </RelativeLayout>
